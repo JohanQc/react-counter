@@ -11,9 +11,11 @@ function App() {
         <div>
           <h1>{number}</h1>
         </div>
-        <button onClick={() => setNumber(number - 1 )}>-</button>
-        <button onClick={() => setNumber(0)}>reset</button>
-        <button onClick={() => setNumber(number + 1)}>+</button>
+        <div className="container-btn">
+        <button className="btn" onClick={() => setNumber(number - 1 )}>-</button>
+        <button className="btn"onClick={() => setNumber(0)}>reset</button>
+        <button className="btn"onClick={() => setNumber(number + 1)}>+</button>
+        </div>
       </div>
     </div>
   );
